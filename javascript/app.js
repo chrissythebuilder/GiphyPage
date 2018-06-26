@@ -24,18 +24,23 @@ $(document).ready(function () {
             method: "GET"
         }) .then (function (response) {
             console.log(response.data);
-            $("#giphyImages").html(response.data);
+            for (i=0;i<11;i++) {
+                var img = $("<img>");
+
+            }
+            
+
         })
 
     });
 
-    // $("#submit").on("click", function() {
-        
-
-
-
-
-    // });
+    $("#submit").on("click", function() {
+        var newButton = $("<button>");
+        newButton.addClass("themes");
+        var newInput = $("#new").val().trim();
+        var newGiphy = newButton.text(newInput);
+        $("#theme_buttons").append(newGiphy);
+    });
 
 
        

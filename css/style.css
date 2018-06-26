@@ -51,9 +51,14 @@ table {
 
 
 #theme_buttons {
-    background-color: grey;
+    background-color: sienna;
+    margin: 50px 0;
     padding: 100px;
     margin-bottom: 50px;
+}
+
+section {
+    position: relative;
 }
 
 #giphyImages {
@@ -61,6 +66,7 @@ table {
     background-color: gainsboro;
     padding: 100px;
     margin-right: 50px;
+    width: 800px;
 }
 
 #addgiphy {
@@ -71,4 +77,13 @@ table {
     margin-right: 20px;
     padding: 3px;
     font-size: 70%;
+}
+
+img {
+    float: left;
+}
+
+.images {
+    float: left;
+    margin: 50px;
 }

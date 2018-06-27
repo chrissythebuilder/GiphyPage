@@ -49,12 +49,40 @@ table {
 
 /* Page Style Loads Here */
 
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 300%;
+    margin: 40px 250px;
+    font-family: 'Cabin', sans-serif;
+    padding: 25px 0;
+    background-color: burlywood;
+    border-radius: 50px;
+}
+
+p {
+    font-size: 110%;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 6px;
+}
 
 #theme_buttons {
-    background-color: sienna;
-    margin: 50px 0;
-    padding: 100px;
     margin-bottom: 50px;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+button {
+    background-color: saddlebrown;
+    color: white;
+    font-weight: 700;
+    padding: 0 30px;
+    border-radius: 5px;
+    font-size: 100%;
 }
 
 section {
@@ -63,10 +91,10 @@ section {
 
 #giphyImages {
     float: left;
-    background-color: gainsboro;
     padding: 100px;
-    margin-right: 50px;
+    margin: 0 30px;
     width: 800px;
+    background-color: seagreen;
 }
 
 #addgiphy {
@@ -75,7 +103,7 @@ section {
 
 .themes {
     margin-right: 20px;
-    padding: 3px;
+    padding: 3px 10px;
     font-size: 70%;
 }
 

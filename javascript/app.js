@@ -68,6 +68,6 @@ $(document).ready(function () {
 // topics - how to loop for each emotion gif to be generated (x)
 // appending all images - how to just keep for the specific emotion
 // on click for motion
-// added values in the array does not generate images
+// added values in the array does not generate right images
 // setting attributes to each button (x)
 // topics.length vs 11 in for loop (x)

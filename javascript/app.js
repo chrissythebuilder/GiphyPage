@@ -25,9 +25,9 @@ $(document).ready(function () {
     
     
 
-    $("button").on("click", function () {
+    $(".themes").on("click", function () {
         var emotion = $(this).attr("data-emotion");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emotion + "&rating=pg&api_key=zipR5lDP7zHvQbilHk9F5jxBOCyLbmMG&limit=10";  
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion + "&rating=pg&api_key=zipR5lDP7zHvQbilHk9F5jxBOCyLbmMG&limit=10";  
 
         $.ajax({
             url: queryURL,
@@ -46,12 +46,23 @@ $(document).ready(function () {
                     $("#giphyImages").prepend(gifSection);
                 };
             };
-            $("img").on("click", function () {
-                var img = $("<img>");
-                img.attr("src", response.data[i].images.original.url);
-                console.log(response);
             })
         })
+
+    $("img").on("click", function () {
+            var emotion = $(this).attr("data-emotion");
+            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emotion + "&rating=pg&api_key=zipR5lDP7zHvQbilHk9F5jxBOCyLbmMG&limit=10";
+    
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            }) .then (function (response) {
+                    console.log(response.data[i].images.fixed_width.url);
+                    var img = $("img");
+                    var movingImg = img.attr("src", response.data[i].images.fixed_width.url);
+                    $("#giphyImages").append(movingImg);
+            });
+        });
 
     });    
 
@@ -59,7 +70,6 @@ $(document).ready(function () {
 
 
 
-})
 
 
 // QUESTIONS:
@@ -68,6 +78,7 @@ $(document).ready(function () {
 // topics - how to loop for each emotion gif to be generated (x)
 // appending all images - how to just keep for the specific emotion
 // on click for motion
-// added values in the array does not generate right images
+// added values does not generate images
+// added values in the array does not generate right images (x)
 // setting attributes to each button (x)
 // topics.length vs 11 in for loop (x)

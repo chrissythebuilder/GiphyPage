@@ -1,4 +1,4 @@
-var topics = ["happy", "mad", "laughing", "sad", "scared", "excited", "scared", "shocked", "crying", "annoyed"];
+var topics = ["Sorry", "Thank You", "Miss You", "Get Well Soon", "Enjoy", "I'm Happy", "I'm Hungry"];
 
 $(document).ready(function () {
 

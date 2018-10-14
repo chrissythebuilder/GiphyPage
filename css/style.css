@@ -53,11 +53,9 @@ h1 {
     text-align: center;
     font-weight: 800;
     font-size: 300%;
-    margin: 40px 250px;
     font-family: 'Cabin', sans-serif;
-    padding: 25px 0;
-    background-color: burlywood;
-    border-radius: 50px;
+    padding: 80px 0;
+    background-image: url(../images/tiny-squares.png);
 }
 
 p {
@@ -66,27 +64,25 @@ p {
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
     text-align: center;
-    background-color: burlywood;
     border-radius: 6px;
 }
 
 #theme_buttons {
-    margin-bottom: 50px;
-    margin-left: 20px;
-    padding: 30px;
+    padding: 50px;
+    font-size: 120%;
 }
 
 button {
-    background-color: saddlebrown;
+    background-color: salmon;
     color: white;
     font-weight: 700;
-    padding: 0 30px;
+    padding: 0 50px;
     border-radius: 5px;
     font-size: 100%;
 }
 
 .newGif {
-    background-color: saddlebrown;
+    background-color: salmon;
     color: white;
     font-weight: 700;
     padding: 0 30px;
@@ -106,7 +102,6 @@ section {
     padding: 100px;
     margin: 0 30px;
     width: 800px;
-    background-color: seagreen;
 }
 
 #addgiphy {
